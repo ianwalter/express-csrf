@@ -1,6 +1,6 @@
 {
   "name": "@ianwalter/csrf",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Cross-Site Request Forgery (CSRF) middleware for Express",
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "license": "SEE LICENSE IN LICENSE",
