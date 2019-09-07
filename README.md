@@ -10,6 +10,38 @@ flexible than other CSRF modules by being split into two separate middleware:
 one that handles the CSRF token generation and one that handles the CSRF token
 validation.
 
+## Installation
+
+```console
+yarn add @ianwalter/express-csrf
+```
+
+## Usage
+
+Use the `csrfGeneration` middleware before you intend to use the
+`req.generateCsrfToken` method to generate a CSRF token:
+
+```js
+const { csrfGeneration } = require('@ianwalter/express-csrf')
+
+app.use(csrfGeneration)
+```
+
+Use the `csrfValidation` middleware before any endpoints you want to protect
+from CSRF attacks:
+
+```js
+const { csrfValidation } = require('@ianwalter/express-csrf')
+
+// Doesn't need to be proected:
+app.post('/login', session.create)
+
+app.use(csrfValidation)
+
+// Protected:
+app.post('/order', orders.create)
+```
+
 ## License
 
 Apache 2.0 with Commons Clause - See [LICENSE][licenseUrl]
