@@ -4,7 +4,7 @@ const BaseError = require('@ianwalter/base-error')
 const ignoredMethods = ['GET', 'HEAD', 'OPTIONS']
 const tokens = new Tokens()
 
-class InvalidCsrfTokenError extends BaseError {
+class InvalidCsrfError extends BaseError {
   constructor (token) {
     super(`Invalid CSRF token ${token}`)
   }
@@ -53,10 +53,10 @@ function csrfValidation (req, res, next) {
     next()
   } else {
     // If the CSRF token contained in the request header doesn't match the CSRF
-    // secret stored in the session, pass the InvalidCsrfTokenError to the next
+    // secret stored in the session, pass the InvalidCsrfError to the next
     // error-handling middleware.
-    next(new InvalidCsrfTokenError(token))
+    next(new InvalidCsrfError(token))
   }
 }
 
-module.exports = { csrfGeneration, csrfValidation, InvalidCsrfTokenError }
+module.exports = { csrfGeneration, csrfValidation, InvalidCsrfError }
