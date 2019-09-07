@@ -23,7 +23,9 @@
   "keywords": [
     "express",
     "csrf",
-    "xsrf"
+    "xsrf",
+    "token",
+    "middleware"
   ],
   "dependencies": {
     "@ianwalter/base-error": "^6.0.0",
