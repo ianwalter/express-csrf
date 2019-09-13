@@ -34,7 +34,7 @@
   "devDependencies": {
     "@ianwalter/bff": "^6.5.0",
     "@ianwalter/eslint-config": "^2.4.0",
-    "@ianwalter/release": "^2.0.0",
+    "@ianwalter/release": "^3.0.0",
     "@ianwalter/renovate-config": "^1.2.0",
     "express": "^4.17.1",
     "express-session": "^1.16.2",
