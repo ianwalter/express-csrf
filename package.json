@@ -37,9 +37,10 @@
     "@ianwalter/eslint-config": "^2.4.0",
     "@ianwalter/release": "^3.0.3",
     "@ianwalter/renovate-config": "^1.2.0",
+    "@ianwalter/requester": "^1.2.1",
+    "@ianwalter/test-server": "^2.0.1",
     "express": "^4.17.1",
-    "express-session": "^1.16.2",
-    "supertest": "^4.0.2"
+    "express-session": "^1.16.2"
   },
   "eslintConfig": {
     "root": true,
