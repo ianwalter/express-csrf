@@ -60,6 +60,7 @@ function setLogLevel (level) {
 }
 
 module.exports = {
+  InvalidCsrfError,
   csrfGeneration,
   csrfValidation,
   setLogLevel
