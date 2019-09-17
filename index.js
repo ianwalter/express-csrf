@@ -8,6 +8,7 @@ const tokens = new Tokens()
 class InvalidCsrfError extends BaseError {
   constructor (token) {
     super(`Invalid CSRF token '${token || ''}'`)
+    this.statusCode = 401
   }
 }
 
