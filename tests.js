@@ -2,13 +2,16 @@ const { test } = require('@ianwalter/bff')
 const { requester } = require('@ianwalter/requester')
 const { createExpressServer } = require('@ianwalter/test-server')
 const session = require('express-session')
-const { csrfGeneration, csrfValidation } = require('.')
+const { csrfGeneration, csrfValidation, setLogLevel } = require('.')
 
 const sessionMiddleware = session({
   secret: 'Booksmart Devil',
   resave: false,
   saveUninitialized: false
 })
+
+// Set CSRF middleware log level to debug.
+setLogLevel('debug')
 
 test(
   'GET method is allowed to pass through without a CSRF header'
@@ -25,7 +28,7 @@ test(
   await server.close()
 })
 
-test(
+test.skip(
   'POST method is not allowed to pass through without a CSRF header'
 )(async ({ expect }) => {
   const server = await createExpressServer()
@@ -39,7 +42,7 @@ test(
   await server.close()
 })
 
-test.only(
+test(
   'POST method is allowed to pass through with a valid CSRF header'
 )(async ({ expect }) => {
   const server = await createExpressServer()
@@ -52,9 +55,13 @@ test.only(
   })
   server.post('/message', (req, res) => res.status(201).json({ message }))
   server.useErrorMiddleware()
-  const { body: { csrfToken } } = await requester.get(server.url)
-  const options = { headers: { 'csrf-token': csrfToken }, body: { message } }
-  const response = await requester.post(`${server.url}/message`, options)
-  expect(response.status).toBe(201)
+  let response = await requester.get(server.url)
+  const headers = {
+    'csrf-token': response.body.csrfToken,
+    cookie: response.headers['set-cookie']
+  }
+  const options = { headers, body: { message } }
+  response = await requester.post(`${server.url}/message`, options)
+  expect(response.statusCode).toBe(201)
   expect(response.body.message).toBe(message)
 })
