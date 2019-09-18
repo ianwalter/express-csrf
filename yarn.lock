@@ -112,6 +112,20 @@
     marked "^0.7.0"
     marked-terminal "^3.3.0"
 
+"@ianwalter/print@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-3.2.1.tgz#345760996467218de31b2a9241dae696ddb063d2"
+  integrity sha512-4UT+qfOIxBLDMExqFRFrvpST/YG/mOAo4f23JDcIlKDIMG3RRLyGINafc0sWUF/IMBhj0BTPU4AgpO50bzH4CQ==
+  dependencies:
+    "@ianwalter/clone" "^4.1.0"
+    "@ianwalter/log" "^3.0.0"
+    chalk "^2.4.2"
+    chromafi ianwalter/chromafi
+    has-ansi "^4.0.0"
+    has-emoji "^1.1.0"
+    marked "^0.7.0"
+    marked-terminal "^3.3.0"
+
 "@ianwalter/release@^3.0.3":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@ianwalter/release/-/release-3.0.3.tgz#c39aa6d0b4858789cd2f18c955dc42d8b2d44a2d"
@@ -135,13 +149,13 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/renovate-config/-/renovate-config-1.2.0.tgz#f84e2fc56ad5d29c0876058c16c25db95baf74a9"
   integrity sha512-OSvziSdR0gxnWeH+9KbS9+HjojFa73vqNFU7wAxWs2ZV/9YofpKw0HwGtzyYgb1xVk8g6ZFPMYaTnFZ4Af6N/w==
 
-"@ianwalter/requester@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/requester/-/requester-1.5.0.tgz#6b3ed5029efdafaa8facbacc147b9c780b564b8d"
-  integrity sha512-ijZf3GMzYtAQwc3F5QK7ugAmU338mI/Q0lcLDyfJjKbKza/ujR/cD64DAcTDHNeBto0ifMgGvgJZ4AlsSPW4ag==
+"@ianwalter/requester@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/requester/-/requester-1.6.0.tgz#9203875dff3cf6966541d0db50f8e66f4e88bf44"
+  integrity sha512-RYtK8vlPG7wH6dtHN2KtnMDz270v3zeT0f1JVM8YHgHeuW/YF/0XH0VUxJvjIrjyvaHDS58m9/sVi6EiJwbeuQ==
   dependencies:
     "@ianwalter/base-error" "^6.0.0"
-    "@ianwalter/print" "^3.2.0"
+    "@ianwalter/print" "^3.2.1"
 
 "@ianwalter/test-server@^2.0.1":
   version "2.0.1"
@@ -1640,6 +1654,13 @@ has-ansi@^3.0.0:
   integrity sha1-Ngd+8dFfMzSEqn+neihgbxxlWzc=
   dependencies:
     ansi-regex "^3.0.0"
+
+has-ansi@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/has-ansi/-/has-ansi-4.0.0.tgz#50e6b59f262c855343baff0ba15753247906fcd5"
+  integrity sha512-VvDupLMvFX9yyed3h1DajPUYQZv82EL2h9I9Jy0ays9gYRJ30hbmGapTiam5cISr42ZCuC3nRgyVBM/YZbpi9A==
+  dependencies:
+    ansi-regex "^4.1.0"
 
 has-emoji@^1.1.0:
   version "1.1.0"
