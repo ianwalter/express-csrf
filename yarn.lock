@@ -149,10 +149,10 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/renovate-config/-/renovate-config-1.2.0.tgz#f84e2fc56ad5d29c0876058c16c25db95baf74a9"
   integrity sha512-OSvziSdR0gxnWeH+9KbS9+HjojFa73vqNFU7wAxWs2ZV/9YofpKw0HwGtzyYgb1xVk8g6ZFPMYaTnFZ4Af6N/w==
 
-"@ianwalter/requester@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/requester/-/requester-1.6.0.tgz#9203875dff3cf6966541d0db50f8e66f4e88bf44"
-  integrity sha512-RYtK8vlPG7wH6dtHN2KtnMDz270v3zeT0f1JVM8YHgHeuW/YF/0XH0VUxJvjIrjyvaHDS58m9/sVi6EiJwbeuQ==
+"@ianwalter/requester@^1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/requester/-/requester-1.7.0.tgz#87f040c4c9384d4a92ecbb9ccee69bfb8281d802"
+  integrity sha512-DCvx3nPdkn8SzVqKio7ElRE+AjCbdUiO+On6AtsG1XMmdFErWczCTuC7J+NmjgtwdyZGj5AHLa4ccFiXSw2Kuw==
   dependencies:
     "@ianwalter/base-error" "^6.0.0"
     "@ianwalter/print" "^3.2.1"
