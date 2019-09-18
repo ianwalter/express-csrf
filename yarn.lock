@@ -135,12 +135,13 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/renovate-config/-/renovate-config-1.2.0.tgz#f84e2fc56ad5d29c0876058c16c25db95baf74a9"
   integrity sha512-OSvziSdR0gxnWeH+9KbS9+HjojFa73vqNFU7wAxWs2ZV/9YofpKw0HwGtzyYgb1xVk8g6ZFPMYaTnFZ4Af6N/w==
 
-"@ianwalter/requester@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@ianwalter/requester/-/requester-1.2.1.tgz#61b2de8c6b2296b2f0e797bb52c373e0f6275cf8"
-  integrity sha512-6atAx+Ee0zUx063tSdml2oOCyjUu7Pv17Pb2Mv7gg8NUg45/5Zl6GYPwj97el8YTZYjpNDCdvblpb/EUPZyiyQ==
+"@ianwalter/requester@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/requester/-/requester-1.5.0.tgz#6b3ed5029efdafaa8facbacc147b9c780b564b8d"
+  integrity sha512-ijZf3GMzYtAQwc3F5QK7ugAmU338mI/Q0lcLDyfJjKbKza/ujR/cD64DAcTDHNeBto0ifMgGvgJZ4AlsSPW4ag==
   dependencies:
     "@ianwalter/base-error" "^6.0.0"
+    "@ianwalter/print" "^3.2.0"
 
 "@ianwalter/test-server@^2.0.1":
   version "2.0.1"
