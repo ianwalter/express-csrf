@@ -132,20 +132,6 @@
     marked "^0.7.0"
     marked-terminal "^3.3.0"
 
-"@ianwalter/print@^3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-3.2.1.tgz#345760996467218de31b2a9241dae696ddb063d2"
-  integrity sha512-4UT+qfOIxBLDMExqFRFrvpST/YG/mOAo4f23JDcIlKDIMG3RRLyGINafc0sWUF/IMBhj0BTPU4AgpO50bzH4CQ==
-  dependencies:
-    "@ianwalter/clone" "^4.1.0"
-    "@ianwalter/log" "^3.0.0"
-    chalk "^2.4.2"
-    chromafi ianwalter/chromafi
-    has-ansi "^4.0.0"
-    has-emoji "^1.1.0"
-    marked "^0.7.0"
-    marked-terminal "^3.3.0"
-
 "@ianwalter/print@^3.3.1":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-3.3.1.tgz#0901f58c9f557714f20f254014bad504f88d1ba4"
@@ -183,13 +169,13 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/renovate-config/-/renovate-config-1.2.0.tgz#f84e2fc56ad5d29c0876058c16c25db95baf74a9"
   integrity sha512-OSvziSdR0gxnWeH+9KbS9+HjojFa73vqNFU7wAxWs2ZV/9YofpKw0HwGtzyYgb1xVk8g6ZFPMYaTnFZ4Af6N/w==
 
-"@ianwalter/requester@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/requester/-/requester-1.8.0.tgz#d4d643a1368c5cd3215b34530cc9ea4c783bfcf4"
-  integrity sha512-ABd+RWOhmsZuce0eGTuXIXF7DrIkKWW/3hqibaFzLV6m3CUK3WbDrcvx/wglw8ikgQETpkrxfk7cGQGoa0aGtA==
+"@ianwalter/requester@^1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/requester/-/requester-1.9.0.tgz#804af2e9f240d5b9ee833dfc1bbff39949ca898a"
+  integrity sha512-0FCx/LbZcWy69w/rSs/Bx1+huUa/v9nV/q5+FogxDeIFzTk8V2wJYgWxev9KmnqaUNcj4be8yo3rOn6hDajDPQ==
   dependencies:
     "@ianwalter/base-error" "^6.0.0"
-    "@ianwalter/print" "^3.2.1"
+    "@ianwalter/print" "^3.3.1"
 
 "@ianwalter/test-server@^2.0.2":
   version "2.0.2"
