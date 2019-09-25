@@ -174,13 +174,14 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/renovate-config/-/renovate-config-1.2.0.tgz#f84e2fc56ad5d29c0876058c16c25db95baf74a9"
   integrity sha512-OSvziSdR0gxnWeH+9KbS9+HjojFa73vqNFU7wAxWs2ZV/9YofpKw0HwGtzyYgb1xVk8g6ZFPMYaTnFZ4Af6N/w==
 
-"@ianwalter/requester@^1.9.0":
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/requester/-/requester-1.9.0.tgz#804af2e9f240d5b9ee833dfc1bbff39949ca898a"
-  integrity sha512-0FCx/LbZcWy69w/rSs/Bx1+huUa/v9nV/q5+FogxDeIFzTk8V2wJYgWxev9KmnqaUNcj4be8yo3rOn6hDajDPQ==
+"@ianwalter/requester@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/requester/-/requester-1.10.0.tgz#bb1bc4407d397cd605694487cf156b914f5e37a1"
+  integrity sha512-isjh8uN/hrn+oicfxPjCDB86e12dchLmBcCmKoVBWz4WFHyn2J+KQWBPX0LWE/MJg2jguiZdt31wLoGrJ0hvoQ==
   dependencies:
     "@ianwalter/base-error" "^6.0.0"
-    "@ianwalter/print" "^3.3.1"
+    "@ianwalter/print" "^3.4.0"
+    fast-json-parse "^1.0.3"
 
 "@ianwalter/test-server@^2.1.0":
   version "2.1.0"
@@ -1470,6 +1471,11 @@ fast-glob@^3.0.3:
     is-glob "^4.0.1"
     merge2 "^1.2.3"
     micromatch "^4.0.2"
+
+fast-json-parse@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/fast-json-parse/-/fast-json-parse-1.0.3.tgz#43e5c61ee4efa9265633046b770fb682a7577c4d"
+  integrity sha512-FRWsaZRWEJ1ESVNbDWmsAlqDk96gPQezzLghafp5J4GUKjbCz3OkAHuZs5TuPEtkbVQERysLp9xv6c24fBm8Aw==
 
 fast-json-stable-stringify@^2.0.0:
   version "2.0.0"
