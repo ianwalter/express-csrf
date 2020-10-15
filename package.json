@@ -36,7 +36,7 @@
     "@ianwalter/bff": "^9.9.1",
     "@ianwalter/eslint-config": "^5.4.0",
     "@ianwalter/release": "^5.0.2",
-    "@ianwalter/renovate-config": "^1.4.0",
+    "@ianwalter/renovate-config": "^1.4.1",
     "@ianwalter/requester": "^2.2.0",
     "@ianwalter/test-server": "^2.1.0",
     "express": "^4.17.1",
